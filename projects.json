@@ -32,6 +32,18 @@
   "geometry": {
     "type": "Point",
     "coordinates": [-84.8753788498128, 38.186725081918894] }
-}
+},
+  {
+  "type": "Feature",
+  "properties": {
+    "title": "Kentucky's Old State Capitol",
+    "status": "ongoing",
+    "description": "The **Old State Capitol** in Kentucky, also known as **Old Statehouse**, is the former capitol building of the Commonwealth of Kentucky",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Kentucky_Old_State_Capitol_-_DSC09284.JPG/330px-Kentucky_Old_State_Capitol_-_DSC09284.JPG"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [-84.87659519379747, 38.20031807824898] }
+}              
         ]
     }
