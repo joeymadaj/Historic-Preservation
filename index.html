@@ -81,40 +81,19 @@
         zoom: 4
     });
 
-    // 2. YOUR DATA (GeoJSON Format)
-    // You can move this to an external file later.
-    const projectData = {
-        "type": "FeatureCollection",
-        "features": [
-            {
-                "type": "Feature",
-                "properties": {
-                    "title": "Fayette County Courthouse",
-                    "status": "completed",
-                    "description": "Comprehensive restoration of the 1899 Romanesque Revival exterior.",
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Fayette_County_Courthouse_Lexington.jpg/300px-Fayette_County_Courthouse_Lexington.jpg"
-                },
-                "geometry": { "type": "Point", "coordinates": [-84.4970, 38.0464] }
-            },
-            {
-                "type": "Feature",
-                "properties": {
-                    "title": "Ongoing Union Station Project",
-                    "status": "ongoing",
-                    "description": "Structural reinforcement and interior preservation.",
-                    "image": "https://via.placeholder.com/300x150?text=Project+Photo"
-                },
-                "geometry": { "type": "Point", "coordinates": [-94.5857, 39.0853] }
-            }
-        ]
-    };
+map.on('load', () => {
+    // This tells the map to fetch your separate JSON file
+    map.addSource('projects', {
+        type: 'geojson',
+        data: './projects.json' // This points to your new file
+    });
 
-    map.on('load', () => {
-        // Add the data to the map
-        map.addSource('projects', {
-            type: 'geojson',
-            data: projectData
-        });
+    // The rest of your map.addLayer code stays exactly the same...
+    map.addLayer({
+        id: 'project-dots',
+        // ... all your existing paint/color logic here ...
+    });
+});
 
         // Add the Dots (The Layer)
         map.addLayer({
@@ -172,6 +151,7 @@
 </body>
 
 </html>
+
 
 
 
