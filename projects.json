@@ -20,6 +20,18 @@
                     "image": "https://via.placeholder.com/300x150?text=Project+Photo"
                 },
                 "geometry": { "type": "Point", "coordinates": [-94.5857, 39.0853] }
-            }
+            },
+                {
+  "type": "Feature",
+  "properties": {
+    "title": "Kentucky State Capitol",
+    "status": "ongoing",
+    "description": "Restoration of the Kentucky State Capitol is set to be completed in 2029.",
+    "image": "https://www.thinkchamplin.com/uploads/case-studies/main_00103172022-Capital-Northside-INTERNET.jpg"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [-84.8753788498128, 38.186725081918894] }
+}
         ]
     }
